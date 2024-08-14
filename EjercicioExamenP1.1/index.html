@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Descuento</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Calculadora de Descuento</h2>
+        <form id="discountForm">
+            <div class="form-group">
+                <label for="product1">Producto 1 (L)</label>
+                <input type="text" class="form-control" id="product1" placeholder="Ingrese solo valor numerico">
+            </div>
+            <div class="form-group">
+                <label for="product2">Producto 2 (L)</label>
+                <input type="text" class="form-control" id="product2" placeholder="Ingrese solo valor numerico">
+            </div>
+            <div class="form-group">
+                <label for="product3">Producto 3 (L)</label>
+                <input type="text" class="form-control" id="product3" placeholder="Ingrese solo valor numerico">
+            </div>
+            <div class="form-group">
+                <label for="product4">Producto 4 (L)</label>
+                <input type="text" class="form-control" id="product4" placeholder="Ingrese solo valor numerico">
+            </div>
+            <div class="form-group">
+                <label for="product5">Producto 5 (L)</label>
+                <input type="text" class="form-control" id="product5" placeholder="Ingrese solo valor numerico">
+            </div>
+            <div class="form-group">
+                <label for="subtotal">Subtotal (L)</label>
+                <input type="text" class="form-control" id="subtotal" readonly>
+            </div>
+            <div class="form-group">
+                <label id="discountLabel" for="discount">Descuento 0%</label>
+                <input type="text" class="form-control" id="discount" readonly>
+            </div>
+            <div class="form-group">
+                <label for="total">Total a pagar (L)</label>
+                <input type="text" class="form-control" id="total" readonly>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="calculateDiscount()">Calcular</button>
+            <button type="button" class="btn btn-secondary" onclick="resetForm()">Limpiar</button>
+        </form>
+    </div>
+
+    <!-- La alerta-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Enlace al archivo JS personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>

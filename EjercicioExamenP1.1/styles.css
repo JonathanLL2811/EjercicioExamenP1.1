@@ -1,0 +1,75 @@
+body {
+    background: linear-gradient(135deg, #51219e, rgba(114, 53, 212, 0.295));
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+/*formulario */
+.container {
+    max-width: 600px;
+    background-color: rgba(114, 53, 212, 0.295);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #1d1422;
+    text-align: center;
+}
+
+
+.form-control {
+    background-color: #d4bdff; 
+    border: 1px solid #380f68; 
+    color: #070000;
+}
+
+.form-control::placeholder {
+    color: #cfcfcf;
+    opacity: 0.8;
+}
+
+.form-control:focus {
+    background-color: #4c3a7d;
+    border-color: #925292;
+    color: #0c0000;
+}
+
+label {
+    font-weight: bold;
+    color: #080053;
+}
+
+
+.btn-primary {
+    background-color: #471c8d;
+    border-color: #7b3e7b;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #925292;
+    border-color: #925292;
+}
+
+.btn-secondary {
+    background-color: #471c8d;
+    border-color: #5e2c5e;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #723472;
+    border-color: #723472;
+}
+
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/*label de descuento */
+#discountLabel {
+    color: #3305ff;
+}
